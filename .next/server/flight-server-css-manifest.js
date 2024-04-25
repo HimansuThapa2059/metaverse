@@ -1,0 +1,1 @@
+self.__RSC_CSS_MANIFEST={"__entry_css__":{"/Users/himansu/Workspace/React/metaverse/app/page":["/Users/himansu/Workspace/React/metaverse/styles/globals.css"]},"/Users/himansu/Workspace/React/metaverse/app/layout.js":["/Users/himansu/Workspace/React/metaverse/styles/globals.css"]}
