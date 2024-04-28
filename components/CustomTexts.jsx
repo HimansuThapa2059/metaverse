@@ -6,11 +6,11 @@ import styles from "../styles";
 
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
-    varients={textContainer}
+    variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
-      <motion.span varients={textVariant2} key={index}>
+      <motion.span variants={textVariant2} key={index}>
         {letter === " " ? "\u00A0" : letter}
       </motion.span>
     ))}
@@ -18,5 +18,12 @@ export const TypingText = ({ title, textStyles }) => (
 );
 
 export const TitleText = ({ title, textStyles }) => (
-  <motion.h2>Title Text</motion.h2>
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
 );
